@@ -20,7 +20,7 @@ func NewRabbitMQ() RabbitMQ {
 	ch, err := conn.Channel()
 
 	if err != nil {
-		log.Panic("Failed to create a new channel", err)
+		log.Panic("Failed to create new channel", err)
 	}
 
 	err = ch.ExchangeDeclare(
